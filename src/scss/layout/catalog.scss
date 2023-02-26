@@ -1,0 +1,91 @@
+.catalog {
+  position: relative;
+  background-color: $base-color;
+  overflow: hidden;
+  background: linear-gradient(90deg, $banner-color 37%, $base-color 37%);
+  padding: 52px 0;
+  &__wrapper {
+    @include flex-list;
+    width: 970px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__description {
+    h3 {
+      font-size: 32px;
+      @include playfair-400;
+      margin-bottom: 38px;
+    }
+    p {
+      width: 380px;
+      margin-bottom: 60px;
+      line-height: 150%;
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+      background-color: $circle-color;
+      border: none;
+      color: $base-color;
+      padding: 25px 38px;
+      font-size: 12px;
+      text-transform: uppercase;
+      @include roboto-500;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+  }
+
+  &__decoration-1 {
+    position: absolute;
+    border: 1px solid $circle-color;
+    width: 365px;
+    height: 365px;
+    border-radius: 50%;
+    right: -140px;
+    top: -150px;
+  }
+  &__decoration-2 {
+    position: absolute;
+    border: 1px solid $circle-color-a;
+    width: 745px;
+    height: 745px;
+    border-radius: 50%;
+    right: -500px;
+    bottom: -200px;
+  }
+}
+
+.slider {
+  &__wrapper {
+    img {
+      width: 520px;
+      height: 415px;
+    }
+  }
+}
+
+.counter {
+  position: absolute;
+  width: 80px;
+  bottom: -35px;
+  left: 360px;
+  @include flex-list;
+  &__current {
+    @include prata-400;
+    font-size: 12px;
+  }
+  &__button {
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    &-prev {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

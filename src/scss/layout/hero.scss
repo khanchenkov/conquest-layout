@@ -1,0 +1,115 @@
+.hero {
+  &__wrapper {
+    @include flex-list;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__heading {
+    padding-left: 100px;
+    z-index: 99;
+    h1 {
+      @include playfair-400;
+      font-size: 45px;
+      margin-bottom: 16px;
+      position: relative;
+
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 1px;
+        background-color: $stroke-color;
+        top: 50%;
+        left: -65px;
+        transform: translateY(calc(-50% + 3px));
+        z-index: 0;
+      }
+    }
+    span {
+      display: block;
+      @include playfair-400;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    p {
+      @include roboto-300;
+      font-size: 14px;
+      margin-bottom: 33px;
+      line-height: 152%;
+    }
+    button {
+      background-color: $button-color;
+      color: $base-color;
+      border: none;
+      text-transform: uppercase;
+      @include roboto-500;
+      padding: 26px 38px;
+      cursor: pointer;
+    }
+  }
+
+  &__decoration {
+    position: absolute;
+    top: -100px;
+    left: 385px;
+    width: 496px;
+    height: 945px;
+    border-radius: 496px 0 0 496px;
+    background: linear-gradient(
+      180deg,
+      lighten($main-cicrle, 12%),
+      $main-cicrle
+    );
+    z-index: -1;
+  }
+}
+
+.hero-watch {
+  padding-right: 90px;
+  position: relative;
+  span {
+    position: absolute;
+    display: block;
+    @include prata-400;
+    font-size: 16px;
+  }
+  &__price {
+    left: 0px;
+    padding-right: 65px;
+    top: 150px;
+    left: -80px;
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: $stroke-color;
+      top: 50%;
+      right: 0;
+      transform: translateY(calc(-50% - 1px));
+      z-index: 0;
+    }
+  }
+  &__size {
+    bottom: 120px;
+    right: 0px;
+    padding-left: 65px;
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: $stroke-color;
+      top: 50%;
+      left: 0;
+      transform: translateY(calc(-50% + 2px));
+      z-index: 0;
+    }
+  }
+  img {
+  }
+}

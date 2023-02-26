@@ -1,11 +1,27 @@
 <header class="header">
-  <div class="header__container">
-    <a href="#" class="header__logo logo"></a>
-    <nav class="header__menu menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">Link</a></li>
-      </ul>
-    </nav>
-    <!-- @@include('./iconMenu.html', {}) -->
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <img src="@img/logo.png" alt="Лого" />
+        <span>Conquest</span>
+      </div>
+      <div class="header__nav">
+        <nav>
+          <ul>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><img src="@img/icons/search-icon.svg" alt="Поиск" /></li>
+          <li><img src="@img/icons/wishlist-icon.svg" alt="Любимое" /><span>1</span></li>
+          <li><img src="@img/icons/cart-icon.svg" alt="Корзина" /></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>

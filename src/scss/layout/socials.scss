@@ -1,0 +1,54 @@
+.socials {
+  background-color: $base-color;
+  padding: 80px 0 90px;
+  &__wrapper {
+    @include flex-list;
+  }
+  &__text {
+    h3 {
+      @include playfair-400;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    p {
+      width: 400px;
+      @include roboto-400;
+      margin-bottom: 118px;
+      line-height: 170%;
+      font-size: 16px;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  &__links {
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        margin-right: 18px;
+      }
+    }
+  }
+  &__watch-images {
+    display: flex;
+    width: 628px;
+    div {
+      img:nth-child(1),
+      img:nth-child(2) {
+        width: 242px;
+      }
+      img:nth-child(1) {
+        height: 228px;
+        margin-bottom: 7px;
+      }
+      img:nth-child(2) {
+        height: 222px;
+      }
+    }
+    img {
+      width: 377px;
+      height: 460px;
+    }
+  }
+}

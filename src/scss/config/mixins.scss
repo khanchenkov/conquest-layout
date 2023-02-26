@@ -1,0 +1,34 @@
+@mixin flex-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin playfair-400 {
+  font-family: "PlayfairDisplay", sans-serif;
+  font-weight: 400;
+}
+@mixin playfair-700 {
+  font-family: "PlayfairDisplay", sans-serif;
+  font-weight: 700;
+}
+@mixin prata-400 {
+  font-family: "Prata", sans-serif;
+  font-weight: 400;
+}
+@mixin roboto-300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+@mixin roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+@mixin roboto-500 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+@mixin roboto-700 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}

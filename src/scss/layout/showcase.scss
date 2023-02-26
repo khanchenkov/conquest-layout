@@ -1,0 +1,106 @@
+.showcase {
+  padding: 80px 0 110px;
+  &__wrapper {
+    h2 {
+      @include playfair-400;
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+  &__heading {
+    margin-bottom: 70px;
+  }
+
+  &__all {
+    display: block;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    a {
+      position: relative;
+      display: inline-block;
+      margin: 0 0 0 auto;
+      text-decoration: none;
+      color: $button-color;
+      @include roboto-500;
+      padding-bottom: 10px;
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 95px;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      background-color: $stroke-color;
+      transform: scaleX(1) translateX(-50%);
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+.watches {
+  @include flex-list;
+}
+
+.example {
+  &__preview {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    width: 315px;
+    height: 315px;
+    margin-bottom: 20px;
+    display: flex;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      padding: 1px;
+      background: linear-gradient(90deg, transparent, $circle-color);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+    img {
+      margin: 0 auto;
+      z-index: 100;
+    }
+  }
+  &__name {
+    @include playfair-700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__price {
+    @include prata-400;
+    font-size: 12px;
+  }
+  &__more {
+    a {
+      @include playfair-400;
+      font-size: 16px;
+      position: relative;
+      padding-left: 45px;
+      z-index: 10;
+      text-decoration: none;
+      color: $accent-color;
+    }
+    a::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 1px;
+      background-color: $stroke-color;
+      top: 50%;
+      left: 0;
+      transform: translateY(calc(-50% + 2px));
+      z-index: 0;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.footer {
+  background-color: $button-color;
+  color: $base-color;
+  padding: 80px 0px 50px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    ul {
+      li {
+        margin-bottom: 15px;
+      }
+    }
+    a {
+      color: $base-color;
+      text-decoration: none;
+      font-size: 12px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__about,
+  &__faq,
+  &__delivery {
+    h6 {
+      margin-bottom: 33px;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  &__contacts {
+    position: relative;
+    img {
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+    a {
+      opacity: 0.75;
+    }
+    h6 {
+      margin-bottom: 33px;
+      font-size: 14px;
+      text-transform: uppercase;
+      @include playfair-700;
+      letter-spacing: 1.4px;
+      padding-left: 33px;
+    }
+  }
+}

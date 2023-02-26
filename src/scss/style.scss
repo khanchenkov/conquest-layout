@@ -1,0 +1,13 @@
+@import "config/reset";
+@import "config/fonts";
+@import "config/vars";
+@import "config/mixins";
+@import "config/global";
+
+@import "layout/header";
+@import "layout/hero";
+
+@import "layout/showcase";
+@import "layout/catalog";
+@import "layout/socials";
+@import "layout/footer";

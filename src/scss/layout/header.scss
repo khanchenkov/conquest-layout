@@ -1,0 +1,54 @@
+.header {
+  &__wrapper {
+    @include flex-list;
+    height: 85px;
+    margin: auto;
+  }
+  &__logo {
+    @include flex-list;
+    width: 100px;
+    span {
+      text-transform: uppercase;
+      @include playfair-400;
+      color: $text-color;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__nav {
+    ul {
+      @include flex-list;
+      width: 422px;
+      li a {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__menu {
+    ul {
+      @include flex-list;
+      width: 100px;
+      li {
+        cursor: pointer;
+        position: relative;
+        span {
+          position: absolute;
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          background-color: $wishlist-counter;
+          color: $accent-color;
+          font-size: 8px;
+          top: -4px;
+          right: -7px;
+          text-align: center;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}

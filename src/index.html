@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/head.html', { 'title': 'Главная' })
+  @@include('html/head.html', { 'title': 'Conquest' })
   <body>
-    @@include('html/header.html', {})
-    <main>
-      <h1>hello world</h1>
-    </main>
-    @@include('html/footer.html', {})
+    @@include("html/header.html", {}) @@include("html/hero.html", {})
+    @@include("html/showcase.html", {}) @@include("html/catalog.html", {})
+    @@include("html/socials.html", {}) @@include("html/footer.html", {})
   </body>
 </html>

@@ -62,7 +62,6 @@ export const ttfToWoff = () => {
 };
 
 export const fontStyle = () => {
-  // Файл стилей подключения шрифтов
   const fontsFile = `${app.path.srcFolder}/scss/config/fonts.scss`;
   fs.readdir(app.path.build.fonts, (err, fontsFiles) => {
     if (fontsFiles) {
@@ -84,7 +83,11 @@ export const fontStyle = () => {
 
             fs.appendFile(
               fontsFile,
-              `@font-face {\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../fonts/${fileName}.woff2") format("woff2"), url("../fonts/${fileName}.woff") format("woff");\n\tfont-weight: ${fontWeightValue};\n\tfont-style: normal;\n}\r\n`,
+              `@font-face {\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../fonts/${
+                fileName + ".woff"
+              }") format("woff2"), url("../fonts/${
+                fileName + ".woff"
+              }") format("woff");\n\tfont-weight: ${fontWeightValue};\n\tfont-style: normal;\n}\r\n`,
               cb
             );
 
